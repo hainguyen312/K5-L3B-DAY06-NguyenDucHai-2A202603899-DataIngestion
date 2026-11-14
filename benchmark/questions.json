@@ -1,0 +1,312 @@
+[
+ {
+  "id": "q01",
+  "split": "dev",
+  "type": "direct",
+  "question": "How can I implement a queue with fast appends and pops in Python?",
+  "expected_answer": "Use collections.deque, designed for fast appends and pops from both ends.",
+  "gold_source_id": "tut-datastructures",
+  "gold_page": 3,
+  "evidence_quote": "To implement a queue, use \"collections.deque\" which was designed to have fast appends and pops from both ends.",
+  "filter": null,
+  "alternatives": []
+ },
+ {
+  "id": "q02",
+  "split": "dev",
+  "type": "condition",
+  "question": "How do I create an empty set? Can I use {}?",
+  "expected_answer": "Use set(); {} creates an empty dictionary, not a set.",
+  "gold_source_id": "tut-datastructures",
+  "gold_page": 10,
+  "evidence_quote": "to create an empty set you have to use \"set()\", not \"{}\"; the latter creates an empty dictionary",
+  "filter": null,
+  "alternatives": []
+ },
+ {
+  "id": "q03",
+  "split": "dev",
+  "type": "condition",
+  "question": "Can a tuple be used as a dictionary key?",
+  "expected_answer": "Only if it contains only strings, numbers or tuples; a tuple containing any mutable object cannot be a key.",
+  "gold_source_id": "tut-datastructures",
+  "gold_page": 11,
+  "evidence_quote": "Tuples can be used as keys if they contain only strings, numbers, or tuples; if a tuple contains any mutable object either directly or indirectly, it cannot be used as a key.",
+  "filter": null,
+  "alternatives": []
+ },
+ {
+  "id": "q04",
+  "split": "dev",
+  "type": "paraphrase",
+  "question": "Where does Python keep the compiled bytecode of modules so that imports are faster?",
+  "expected_answer": "In the __pycache__ directory, as module.<version>.pyc.",
+  "gold_source_id": "tut-modules",
+  "gold_page": 5,
+  "evidence_quote": "Python caches the compiled version of each module in the \"__pycache__\" directory",
+  "filter": null,
+  "alternatives": []
+ },
+ {
+  "id": "q05",
+  "split": "dev",
+  "type": "direct",
+  "question": "Why does a package directory need an __init__.py file?",
+  "expected_answer": "__init__.py makes Python treat the directory as a package (unless it is a namespace package).",
+  "gold_source_id": "tut-modules",
+  "gold_page": 11,
+  "evidence_quote": "The \"__init__.py\" files are required to make Python treat directories containing the file as packages (unless using a *namespace package*, a relatively advanced feature).",
+  "filter": null,
+  "alternatives": []
+ },
+ {
+  "id": "q06",
+  "split": "dev",
+  "type": "direct",
+  "question": "When I import a module named spam, where does the interpreter look first?",
+  "expected_answer": "First among built-in modules (sys.builtin_module_names), then for spam.py in the directories of sys.path.",
+  "gold_source_id": "tut-modules",
+  "gold_page": 4,
+  "evidence_quote": "When a module named \"spam\" is imported, the interpreter first searches for a built-in module with that name.",
+  "filter": null,
+  "alternatives": []
+ },
+ {
+  "id": "q07",
+  "split": "dev",
+  "type": "paraphrase",
+  "question": "What is the benefit of opening files inside a with block?",
+  "expected_answer": "The file is properly closed when the block finishes, even if an exception is raised; shorter than try/finally.",
+  "gold_source_id": "tut-inputoutput",
+  "gold_page": 8,
+  "evidence_quote": "The advantage is that the file is properly closed after its suite finishes, even if an exception is raised at some point.",
+  "filter": null,
+  "alternatives": []
+ },
+ {
+  "id": "q08",
+  "split": "dev",
+  "type": "direct",
+  "question": "What is the difference between json.dumps() and json.dump()?",
+  "expected_answer": "dumps() returns a string; dump() serializes the object to a text file.",
+  "gold_source_id": "tut-inputoutput",
+  "gold_page": 11,
+  "evidence_quote": "Another variant of the \"dumps()\" function, called \"dump()\", simply serializes the object to a *text file*.",
+  "filter": null,
+  "alternatives": []
+ },
+ {
+  "id": "q09",
+  "split": "dev",
+  "type": "paraphrase",
+  "question": "Why put code in the else clause of try instead of inside the try block?",
+  "expected_answer": "It avoids accidentally catching an exception that was not raised by the code being protected.",
+  "gold_source_id": "tut-errors",
+  "gold_page": 6,
+  "evidence_quote": "it avoids accidentally catching an exception that wasn't raised by the code being protected by the \"try\" ... \"except\" statement.",
+  "filter": null,
+  "alternatives": []
+ },
+ {
+  "id": "q10",
+  "split": "dev",
+  "type": "condition",
+  "question": "If both the try block and the finally clause contain a return statement, which value is returned?",
+  "expected_answer": "The value from the finally clause's return.",
+  "gold_source_id": "tut-errors",
+  "gold_page": 9,
+  "evidence_quote": "If a \"finally\" clause includes a \"return\" statement, the returned value will be the one from the \"finally\" clause's \"return\"",
+  "filter": null,
+  "alternatives": []
+ },
+ {
+  "id": "q11",
+  "split": "dev",
+  "type": "direct",
+  "question": "How can I add extra information to an exception after catching it?",
+  "expected_answer": "Call the exception's add_note(note) method; notes are shown in the traceback.",
+  "gold_source_id": "tut-errors",
+  "gold_page": 13,
+  "evidence_quote": "exceptions have a method \"add_note(note)\" that accepts a string and adds it to the exception's notes list.",
+  "filter": null,
+  "alternatives": []
+ },
+ {
+  "id": "q12",
+  "split": "dev",
+  "type": "direct",
+  "question": "What command creates a virtual environment called tutorial-env?",
+  "expected_answer": "python -m venv tutorial-env",
+  "gold_source_id": "tut-venv",
+  "gold_page": 2,
+  "evidence_quote": "python -m venv tutorial-env",
+  "filter": null,
+  "alternatives": []
+ },
+ {
+  "id": "q13",
+  "split": "dev",
+  "type": "paraphrase",
+  "question": "How do I record the exact package versions installed in my environment so others can reinstall them?",
+  "expected_answer": "Run python -m pip freeze and save the output to requirements.txt.",
+  "gold_source_id": "tut-venv",
+  "gold_page": 4,
+  "evidence_quote": "A common convention is to put this list in a \"requirements.txt\" file",
+  "filter": null,
+  "alternatives": []
+ },
+ {
+  "id": "q14",
+  "split": "dev",
+  "type": "condition",
+  "question": "Why should I write import os instead of from os import *?",
+  "expected_answer": "from os import * would let os.open() shadow the built-in open(), which works very differently.",
+  "gold_source_id": "tut-stdlib",
+  "gold_page": 1,
+  "evidence_quote": "This will keep \"os.open()\" from shadowing the built-in \"open()\" function which operates much differently.",
+  "filter": null,
+  "alternatives": []
+ },
+ {
+  "id": "q15",
+  "split": "dev",
+  "type": "direct",
+  "question": "What is the recommended way to coordinate work between threads?",
+  "expected_answer": "Concentrate access to a resource in a single thread and feed it requests through the queue module.",
+  "gold_source_id": "tut-stdlib2",
+  "gold_page": 5,
+  "evidence_quote": "the preferred approach to task coordination is to concentrate all access to a resource in a single thread and then use the \"queue\" module to feed that thread with requests from other threads.",
+  "filter": null,
+  "alternatives": []
+ },
+ {
+  "id": "q16",
+  "split": "dev",
+  "type": "condition",
+  "question": "Can list.sort() be used on a dictionary or other iterables?",
+  "expected_answer": "No, list.sort() is only defined for lists; sorted() accepts any iterable.",
+  "gold_source_id": "howto-sorting",
+  "gold_page": 1,
+  "evidence_quote": "the \"list.sort()\" method is only defined for lists. In contrast, the \"sorted()\" function accepts any iterable.",
+  "filter": null,
+  "alternatives": []
+ },
+ {
+  "id": "q17",
+  "split": "dev",
+  "type": "filter",
+  "question": "[Context: user is reading the HOWTO guides] How do I sort in descending order?",
+  "expected_answer": "Pass reverse=True to list.sort() or sorted().",
+  "gold_source_id": "howto-sorting",
+  "gold_page": 3,
+  "evidence_quote": "Both \"list.sort()\" and \"sorted()\" accept a *reverse* parameter with a boolean value. This is used to flag descending sorts.",
+  "filter": {
+   "doc_type": "howto"
+  },
+  "alternatives": []
+ },
+ {
+  "id": "q18",
+  "split": "dev",
+  "type": "filter",
+  "question": "[Context: user is reading the Python tutorial] What does the logging module show by default, and where does the output go?",
+  "expected_answer": "Informational and debugging messages are suppressed; output goes to standard error.",
+  "gold_source_id": "tut-stdlib2",
+  "gold_page": 5,
+  "evidence_quote": "By default, informational and debugging messages are suppressed and the output is sent to standard error.",
+  "filter": {
+   "doc_type": "tutorial"
+  },
+  "alternatives": []
+ },
+ {
+  "id": "q19",
+  "split": "dev",
+  "type": "filter",
+  "question": "[Context: user is reading the HOWTO guides] What is the default logging level?",
+  "expected_answer": "WARNING: only events of this severity and higher are tracked unless configured otherwise.",
+  "gold_source_id": "howto-logging",
+  "gold_page": 3,
+  "evidence_quote": "The default level is \"WARNING\", which means that only events of this severity and higher will be tracked",
+  "filter": {
+   "doc_type": "howto"
+  },
+  "alternatives": []
+ },
+ {
+  "id": "q20",
+  "split": "test",
+  "type": "condition",
+  "question": "When several records have the same key, does sorting keep their original order?",
+  "expected_answer": "Yes, sorts are guaranteed to be stable: records with equal keys keep their original order.",
+  "gold_source_id": "howto-sorting",
+  "gold_page": 4,
+  "evidence_quote": "Sorts are guaranteed to be stable. That means that when multiple records have the same key, their original order is preserved.",
+  "filter": null,
+  "alternatives": []
+ },
+ {
+  "id": "q21",
+  "split": "test",
+  "type": "filter",
+  "question": "[Context: user is reading the HOWTO guides] How do I make each run of my script start a fresh log file instead of appending?",
+  "expected_answer": "Pass filemode='w' to logging.basicConfig().",
+  "gold_source_id": "howto-logging",
+  "gold_page": 5,
+  "evidence_quote": "If you want each run to start afresh, not remembering the messages from earlier runs, you can specify the *filemode* argument",
+  "filter": {
+   "doc_type": "howto"
+  },
+  "alternatives": []
+ },
+ {
+  "id": "q22",
+  "split": "test",
+  "type": "filter",
+  "question": "[Context: user is reading the Python tutorial] How do I loop over a sequence in sorted order without changing the original?",
+  "expected_answer": "Use sorted(), which returns a new sorted list and leaves the source unaltered.",
+  "gold_source_id": "tut-datastructures",
+  "gold_page": 14,
+  "evidence_quote": "To loop over a sequence in sorted order, use the \"sorted()\" function which returns a new sorted list while leaving the source unaltered.",
+  "filter": {
+   "doc_type": "tutorial"
+  },
+  "alternatives": []
+ },
+ {
+  "id": "q23",
+  "split": "test",
+  "type": "condition",
+  "question": "Should a library attach its own handlers to its loggers?",
+  "expected_answer": "No; it is strongly advised not to add any handlers other than NullHandler to a library's loggers.",
+  "gold_source_id": "howto-logging",
+  "gold_page": 20,
+  "evidence_quote": "It is strongly advised that you *do not add any handlers other than* \"NullHandler\" *to your library's loggers*.",
+  "filter": null,
+  "alternatives": []
+ },
+ {
+  "id": "q24",
+  "split": "test",
+  "type": "paraphrase",
+  "question": "Which module should I use for money calculations that need exact decimal representation?",
+  "expected_answer": "The decimal module (Decimal type), helpful for financial applications requiring exact decimal representation.",
+  "gold_source_id": "tut-stdlib2",
+  "gold_page": 8,
+  "evidence_quote": "The \"decimal\" module offers a \"Decimal\" datatype for decimal floating-point arithmetic.",
+  "filter": null,
+  "alternatives": []
+ },
+ {
+  "id": "q25",
+  "split": "test",
+  "type": "direct",
+  "question": "If I call logging.getLogger() twice with the same name, do I get two different logger objects?",
+  "expected_answer": "No, both calls return a reference to the same logger object.",
+  "gold_source_id": "howto-logging",
+  "gold_page": 11,
+  "evidence_quote": "Multiple calls to \"getLogger()\" with the same name will return a reference to the same logger object.",
+  "filter": null,
+  "alternatives": []
+ }
+]

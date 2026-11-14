@@ -1,0 +1,26 @@
+id,split,gold,found_in_units,quote_chars,filter,filter_consistent
+q01,dev,tut-datastructures#p03,tut-datastructures#p03,110,null,True
+q02,dev,tut-datastructures#p10,tut-datastructures#p10,96,null,True
+q03,dev,tut-datastructures#p11,tut-datastructures#p11,174,null,True
+q04,dev,tut-modules#p05,tut-modules#p05,80,null,True
+q05,dev,tut-modules#p11,tut-modules#p11,170,null,True
+q06,dev,tut-modules#p04,tut-modules#p04,108,null,True
+q07,dev,tut-inputoutput#p08,tut-inputoutput#p08,121,null,True
+q08,dev,tut-inputoutput#p11,tut-inputoutput#p11,106,null,True
+q09,dev,tut-errors#p06,tut-errors#p06,128,null,True
+q10,dev,tut-errors#p09,tut-errors#p09,124,null,True
+q11,dev,tut-errors#p13,tut-errors#p13,106,null,True
+q12,dev,tut-venv#p02,tut-venv#p02,27,null,True
+q13,dev,tut-venv#p04,tut-venv#p04,68,null,True
+q14,dev,tut-stdlib#p01,tut-stdlib#p01,105,null,True
+q15,dev,tut-stdlib2#p05,tut-stdlib2#p05,191,null,True
+q16,dev,howto-sorting#p01,howto-sorting#p01,110,null,True
+q17,dev,howto-sorting#p03,howto-sorting#p03,123,"{""doc_type"": ""howto""}",True
+q18,dev,tut-stdlib2#p05,tut-stdlib2#p05,105,"{""doc_type"": ""tutorial""}",True
+q19,dev,howto-logging#p03,howto-logging#p03,104,"{""doc_type"": ""howto""}",True
+q20,test,howto-sorting#p04,howto-sorting#p04,126,null,True
+q21,test,howto-logging#p05,howto-logging#p05,125,"{""doc_type"": ""howto""}",True
+q22,test,tut-datastructures#p14,tut-datastructures#p14,136,"{""doc_type"": ""tutorial""}",True
+q23,test,howto-logging#p20,howto-logging#p20,111,null,True
+q24,test,tut-stdlib2#p08,tut-stdlib2#p08,87,null,True
+q25,test,howto-logging#p11,howto-logging#p11,101,null,True

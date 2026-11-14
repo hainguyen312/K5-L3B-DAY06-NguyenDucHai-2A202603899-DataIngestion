@@ -1,0 +1,980 @@
+{
+ "corpus": "Tài liệu Python 3.15 (bản plain-text): một số chương Tutorial và HOWTO được chọn",
+ "archive_url": "https://docs.python.org/3/archives/python-3.15-docs-text.tar.bz2",
+ "archive_sha256": "5b2d847afedb4b14b715485b84d30fe4993f80562e3a7f7508680afa5fec8a00",
+ "accessed_at": "2026-11-14",
+ "docs_version": "3.15",
+ "license_or_permission": "PSF License Version 2 (tài liệu Python); code mẫu dual-license PSF-2.0 / 0BSD từ 3.8.6 - xem data/raw/python-docs-3.15/LICENSE-python-docs.txt",
+ "unit_rule": "Không có trang vật lý (HTML/text). Mỗi tài liệu được chuẩn hóa rồi chia theo thứ tự tại ranh giới đoạn thành các đơn vị >= 1500 ký tự đã chuẩn hóa; phần dư ngắn hơn được gộp vào đơn vị trước; không đơn vị nào kết thúc bằng heading trơ. `page` = số thứ tự đơn vị (bắt đầu từ 1), page_id = <source_id>#pNN. Không nhân bản.",
+ "excluded": "Không chọn các trang Tutorial index/appetite/whatnow...; không cắt bỏ gì bên trong các file đã chọn.",
+ "total_units": 105,
+ "total_normalized_chars": 183701,
+ "documents": [
+  {
+   "source_id": "tut-datastructures",
+   "title": "5. Data Structures",
+   "source_path_or_url": "https://docs.python.org/3.15/tutorial/datastructures.html",
+   "local_path": "data/raw/python-docs-3.15/tutorial/datastructures.txt",
+   "raw_chars": 26633,
+   "normalized_chars": 26273,
+   "unit_count": 15,
+   "units": [
+    {
+     "page_id": "tut-datastructures#p01",
+     "page": 1,
+     "chars": 1679,
+     "section_at_start": "5. Data Structures",
+     "starts_with": "# 5. Data Structures",
+     "sha256": "5ff073bc57d6f451"
+    },
+    {
+     "page_id": "tut-datastructures#p02",
+     "page": 2,
+     "chars": 1658,
+     "section_at_start": "5.1. More on Lists",
+     "starts_with": "list.count(value, /)",
+     "sha256": "d8260b7dd2753bae"
+    },
+    {
+     "page_id": "tut-datastructures#p03",
+     "page": 3,
+     "chars": 1639,
+     "section_at_start": "5.1.1. Using Lists as Stacks",
+     "starts_with": "# 5.1.1. Using Lists as Stacks",
+     "sha256": "6a6c93dde069f185"
+    },
+    {
+     "page_id": "tut-datastructures#p04",
+     "page": 4,
+     "chars": 1565,
+     "section_at_start": "5.1.3. List Comprehensions",
+     "starts_with": "# 5.1.3. List Comprehensions",
+     "sha256": "1362ee1aa82ed222"
+    },
+    {
+     "page_id": "tut-datastructures#p05",
+     "page": 5,
+     "chars": 1652,
+     "section_at_start": "5.1.3. List Comprehensions",
+     "starts_with": "Note how the order of the \"for\" and \"if\" statements is the same in",
+     "sha256": "16c70f72309ac072"
+    },
+    {
+     "page_id": "tut-datastructures#p06",
+     "page": 6,
+     "chars": 1859,
+     "section_at_start": "5.1.4. Nested List Comprehensions",
+     "starts_with": "Consider the following example of a 3x4 matrix implemented as a list",
+     "sha256": "3cd3846b6ede342b"
+    },
+    {
+     "page_id": "tut-datastructures#p07",
+     "page": 7,
+     "chars": 1581,
+     "section_at_start": "5.1.5. Unpacking in Lists and List Comprehensions",
+     "starts_with": ">>> x = [1, 2, 3]",
+     "sha256": "2e3a37ccc270a30e"
+    },
+    {
+     "page_id": "tut-datastructures#p08",
+     "page": 8,
+     "chars": 1687,
+     "section_at_start": "5.2. The \"del\" statement",
+     "starts_with": "\"del\" can also be used to delete entire variables:",
+     "sha256": "9db16105a59ed056"
+    },
+    {
+     "page_id": "tut-datastructures#p09",
+     "page": 9,
+     "chars": 1509,
+     "section_at_start": "5.3. Tuples and Sequences",
+     "starts_with": "Though tuples may seem similar to lists, they are often used in",
+     "sha256": "e1e1b0c0eafdaf18"
+    },
+    {
+     "page_id": "tut-datastructures#p10",
+     "page": 10,
+     "chars": 1623,
+     "section_at_start": "5.4. Sets",
+     "starts_with": "# 5.4. Sets",
+     "sha256": "b0bd7b1807a0c186"
+    },
+    {
+     "page_id": "tut-datastructures#p11",
+     "page": 11,
+     "chars": 1729,
+     "section_at_start": "5.4. Sets",
+     "starts_with": "Similarly to list comprehensions, set comprehensions are also",
+     "sha256": "46824bea4d6ca7c5"
+    },
+    {
+     "page_id": "tut-datastructures#p12",
+     "page": 12,
+     "chars": 1517,
+     "section_at_start": "5.5. Dictionaries",
+     "starts_with": "Extracting a value for a non-existent key by subscripting (\"d[key]\")",
+     "sha256": "6b177e92511b67b8"
+    },
+    {
+     "page_id": "tut-datastructures#p13",
+     "page": 13,
+     "chars": 1601,
+     "section_at_start": "5.5. Dictionaries",
+     "starts_with": "And dictionary unpacking (via \"**\") can be used to merge multiple",
+     "sha256": "b4c15c321bdf9fd6"
+    },
+    {
+     "page_id": "tut-datastructures#p14",
+     "page": 14,
+     "chars": 1817,
+     "section_at_start": "5.6. Looping Techniques",
+     "starts_with": "To loop over a sequence in reverse, first specify the sequence in a",
+     "sha256": "27af7bf31d035d66"
+    },
+    {
+     "page_id": "tut-datastructures#p15",
+     "page": 15,
+     "chars": 3129,
+     "section_at_start": "5.7. More on Conditions",
+     "starts_with": "Comparisons can be chained.  For example, \"a < b == c\" tests whether",
+     "sha256": "e799db3c5590a04b"
+    }
+   ],
+   "errors": [],
+   "doc_type": "tutorial",
+   "version": "3.15"
+  },
+  {
+   "source_id": "tut-modules",
+   "title": "6. Modules",
+   "source_path_or_url": "https://docs.python.org/3.15/tutorial/modules.html",
+   "local_path": "data/raw/python-docs-3.15/tutorial/modules.txt",
+   "raw_chars": 24074,
+   "normalized_chars": 23828,
+   "unit_count": 13,
+   "units": [
+    {
+     "page_id": "tut-modules#p01",
+     "page": 1,
+     "chars": 1550,
+     "section_at_start": "6. Modules",
+     "starts_with": "# 6. Modules",
+     "sha256": "19afa4af21e9f0cc"
+    },
+    {
+     "page_id": "tut-modules#p02",
+     "page": 2,
+     "chars": 1620,
+     "section_at_start": "6. Modules",
+     "starts_with": "def fib2(n):",
+     "sha256": "a06377cac5bfd533"
+    },
+    {
+     "page_id": "tut-modules#p03",
+     "page": 3,
+     "chars": 1500,
+     "section_at_start": "6.1. More on Modules",
+     "starts_with": "Modules can import other modules.  It is customary but not required to",
+     "sha256": "225ba09d91886de4"
+    },
+    {
+     "page_id": "tut-modules#p04",
+     "page": 4,
+     "chars": 1826,
+     "section_at_start": "6.1. More on Modules",
+     "starts_with": "This is effectively importing the module in the same way that \"import",
+     "sha256": "08c37bc09bce6f6c"
+    },
+    {
+     "page_id": "tut-modules#p05",
+     "page": 5,
+     "chars": 1586,
+     "section_at_start": "6.1.2. The Module Search Path",
+     "starts_with": "* The directory containing the input script (or the current directory",
+     "sha256": "ece5854b5774d461"
+    },
+    {
+     "page_id": "tut-modules#p06",
+     "page": 6,
+     "chars": 1579,
+     "section_at_start": "6.1.3. \"Compiled\" Python files",
+     "starts_with": "Python checks the modification date of the source against the compiled",
+     "sha256": "ac992a2193005704"
+    },
+    {
+     "page_id": "tut-modules#p07",
+     "page": 7,
+     "chars": 1509,
+     "section_at_start": "6.2. Standard Modules",
+     "starts_with": "# 6.2. Standard Modules",
+     "sha256": "9b7268593bd0f4be"
+    },
+    {
+     "page_id": "tut-modules#p08",
+     "page": 8,
+     "chars": 1635,
+     "section_at_start": "6.3. The \"dir()\" Function",
+     "starts_with": ">>> import fibo, sys",
+     "sha256": "22a29cd40f279929"
+    },
+    {
+     "page_id": "tut-modules#p09",
+     "page": 9,
+     "chars": 2544,
+     "section_at_start": "6.3. The \"dir()\" Function",
+     "starts_with": "Without arguments, \"dir()\" lists the names you have defined currently:",
+     "sha256": "a5e8aef003b22316"
+    },
+    {
+     "page_id": "tut-modules#p10",
+     "page": 10,
+     "chars": 2030,
+     "section_at_start": "6.4. Packages",
+     "starts_with": "# 6.4. Packages",
+     "sha256": "77da4346b1fa6cb0"
+    },
+    {
+     "page_id": "tut-modules#p11",
+     "page": 11,
+     "chars": 1823,
+     "section_at_start": "6.4. Packages",
+     "starts_with": "When importing the package, Python searches through the directories on",
+     "sha256": "84ee01e73859f432"
+    },
+    {
+     "page_id": "tut-modules#p12",
+     "page": 12,
+     "chars": 1796,
+     "section_at_start": "6.4. Packages",
+     "starts_with": "Contrarily, when using syntax like \"import item.subitem.subsubitem\",",
+     "sha256": "2d036d77d9e87aee"
+    },
+    {
+     "page_id": "tut-modules#p13",
+     "page": 13,
+     "chars": 2806,
+     "section_at_start": "6.4.1. Importing * From a Package",
+     "starts_with": "__all__ = [",
+     "sha256": "34be55fefb59924d"
+    }
+   ],
+   "errors": [],
+   "doc_type": "tutorial",
+   "version": "3.15"
+  },
+  {
+   "source_id": "tut-inputoutput",
+   "title": "7. Input and output",
+   "source_path_or_url": "https://docs.python.org/3.15/tutorial/inputoutput.html",
+   "local_path": "data/raw/python-docs-3.15/tutorial/inputoutput.txt",
+   "raw_chars": 19420,
+   "normalized_chars": 19147,
+   "unit_count": 11,
+   "units": [
+    {
+     "page_id": "tut-inputoutput#p01",
+     "page": 1,
+     "chars": 1645,
+     "section_at_start": "7. Input and output",
+     "starts_with": "# 7. Input and output",
+     "sha256": "402e0e50d2b4b041"
+    },
+    {
+     "page_id": "tut-inputoutput#p02",
+     "page": 2,
+     "chars": 1918,
+     "section_at_start": "7.1. Fancier output formatting",
+     "starts_with": "Notice how the \"yes_votes\" are padded with spaces and a negative",
+     "sha256": "3d18fc6177a6f559"
+    },
+    {
+     "page_id": "tut-inputoutput#p03",
+     "page": 3,
+     "chars": 1648,
+     "section_at_start": "7.1. Fancier output formatting",
+     "starts_with": "The \"string\" module contains support for a simple templating approach",
+     "sha256": "40dcea36ffea82c6"
+    },
+    {
+     "page_id": "tut-inputoutput#p04",
+     "page": 4,
+     "chars": 1627,
+     "section_at_start": "7.1.1. Formatted string literals",
+     "starts_with": "The \"=\" specifier can be used to expand an expression to the text of",
+     "sha256": "64114cdc4ce9aa05"
+    },
+    {
+     "page_id": "tut-inputoutput#p05",
+     "page": 5,
+     "chars": 1533,
+     "section_at_start": "7.1.2. The string format() method",
+     "starts_with": "If you have a really long format string that you don't want to split",
+     "sha256": "a24119fa17c684e3"
+    },
+    {
+     "page_id": "tut-inputoutput#p06",
+     "page": 6,
+     "chars": 1797,
+     "section_at_start": "7.1.2. The string format() method",
+     "starts_with": "For a complete overview of string formatting with \"str.format()\", see",
+     "sha256": "a33ce86461bdd49b"
+    },
+    {
+     "page_id": "tut-inputoutput#p07",
+     "page": 7,
+     "chars": 1785,
+     "section_at_start": "7.1.4. Old string formatting",
+     "starts_with": ">>> import math",
+     "sha256": "08efc95d639801e9"
+    },
+    {
+     "page_id": "tut-inputoutput#p08",
+     "page": 8,
+     "chars": 1830,
+     "section_at_start": "7.2. Reading and writing files",
+     "starts_with": "It is good practice to use the \"with\" keyword when dealing with file",
+     "sha256": "b494b59474ab8bd1"
+    },
+    {
+     "page_id": "tut-inputoutput#p09",
+     "page": 9,
+     "chars": 1584,
+     "section_at_start": "7.2.1. Methods of file objects",
+     "starts_with": ">>> f.read()",
+     "sha256": "3a73c9cf170c54be"
+    },
+    {
+     "page_id": "tut-inputoutput#p10",
+     "page": 10,
+     "chars": 1654,
+     "section_at_start": "7.2.1. Methods of file objects",
+     "starts_with": "To change the file object's position, use \"f.seek(offset, whence)\".",
+     "sha256": "b6e13731daa1ec25"
+    },
+    {
+     "page_id": "tut-inputoutput#p11",
+     "page": 11,
+     "chars": 2106,
+     "section_at_start": "7.2.2. Saving structured data with \"json\"",
+     "starts_with": "Rather than having users constantly writing and debugging code to save",
+     "sha256": "ed6486ff7a9dda68"
+    }
+   ],
+   "errors": [],
+   "doc_type": "tutorial",
+   "version": "3.15"
+  },
+  {
+   "source_id": "tut-errors",
+   "title": "8. Errors and Exceptions",
+   "source_path_or_url": "https://docs.python.org/3.15/tutorial/errors.html",
+   "local_path": "data/raw/python-docs-3.15/tutorial/errors.txt",
+   "raw_chars": 23494,
+   "normalized_chars": 23186,
+   "unit_count": 14,
+   "units": [
+    {
+     "page_id": "tut-errors#p01",
+     "page": 1,
+     "chars": 1913,
+     "section_at_start": "8. Errors and Exceptions",
+     "starts_with": "# 8. Errors and Exceptions",
+     "sha256": "5dc4c6256e82bf6b"
+    },
+    {
+     "page_id": "tut-errors#p02",
+     "page": 2,
+     "chars": 1556,
+     "section_at_start": "8.2. Exceptions",
+     "starts_with": "The last line of the error message indicates what happened. Exceptions",
+     "sha256": "6290a0c7f2430ce6"
+    },
+    {
+     "page_id": "tut-errors#p03",
+     "page": 3,
+     "chars": 1505,
+     "section_at_start": "8.3. Handling Exceptions",
+     "starts_with": "The \"try\" statement works as follows.",
+     "sha256": "963990b98381c37f"
+    },
+    {
+     "page_id": "tut-errors#p04",
+     "page": 4,
+     "chars": 1540,
+     "section_at_start": "8.3. Handling Exceptions",
+     "starts_with": "class C(B):",
+     "sha256": "76c0bb88434d0a48"
+    },
+    {
+     "page_id": "tut-errors#p05",
+     "page": 5,
+     "chars": 1613,
+     "section_at_start": "8.3. Handling Exceptions",
+     "starts_with": "\"BaseException\" is the common base class of all exceptions. One of its",
+     "sha256": "ecd8bd2dbab12451"
+    },
+    {
+     "page_id": "tut-errors#p06",
+     "page": 6,
+     "chars": 1518,
+     "section_at_start": "8.3. Handling Exceptions",
+     "starts_with": "The use of the \"else\" clause is better than adding additional code to",
+     "sha256": "9d3476b85f5d6ba2"
+    },
+    {
+     "page_id": "tut-errors#p07",
+     "page": 7,
+     "chars": 1711,
+     "section_at_start": "8.4. Raising Exceptions",
+     "starts_with": ">>> try:",
+     "sha256": "e78a0d14f4dfe4f5"
+    },
+    {
+     "page_id": "tut-errors#p08",
+     "page": 8,
+     "chars": 1552,
+     "section_at_start": "8.5. Exception Chaining",
+     "starts_with": "The above exception was the direct cause of the following exception:",
+     "sha256": "a2222ad21e9ce897"
+    },
+    {
+     "page_id": "tut-errors#p09",
+     "page": 9,
+     "chars": 1727,
+     "section_at_start": "8.7. Defining Clean-up Actions",
+     "starts_with": ">>> try:",
+     "sha256": "ad0c400ceeb8cd4c"
+    },
+    {
+     "page_id": "tut-errors#p10",
+     "page": 10,
+     "chars": 1672,
+     "section_at_start": "8.7. Defining Clean-up Actions",
+     "starts_with": "For example:",
+     "sha256": "3abda76a8581b9ea"
+    },
+    {
+     "page_id": "tut-errors#p11",
+     "page": 11,
+     "chars": 2149,
+     "section_at_start": "8.8. Predefined Clean-up Actions",
+     "starts_with": "for line in open(\"myfile.txt\"):",
+     "sha256": "8d00b4d74c86bf78"
+    },
+    {
+     "page_id": "tut-errors#p12",
+     "page": 12,
+     "chars": 1521,
+     "section_at_start": "8.9. Raising and Handling Multiple Unrelated Exceptions",
+     "starts_with": "By using \"except*\" instead of \"except\", we can selectively handle only",
+     "sha256": "dce0bf501cf5b763"
+    },
+    {
+     "page_id": "tut-errors#p13",
+     "page": 13,
+     "chars": 1595,
+     "section_at_start": "8.9. Raising and Handling Multiple Unrelated Exceptions",
+     "starts_with": "Note that the exceptions nested in an exception group must be",
+     "sha256": "1d94ddef6d70d680"
+    },
+    {
+     "page_id": "tut-errors#p14",
+     "page": 14,
+     "chars": 1588,
+     "section_at_start": "8.10. Enriching Exceptions with Notes",
+     "starts_with": ">>> def f():",
+     "sha256": "d9d5a2af546e5e2f"
+    }
+   ],
+   "errors": [],
+   "doc_type": "tutorial",
+   "version": "3.15"
+  },
+  {
+   "source_id": "tut-venv",
+   "title": "12. Virtual Environments and Packages",
+   "source_path_or_url": "https://docs.python.org/3.15/tutorial/venv.html",
+   "local_path": "data/raw/python-docs-3.15/tutorial/venv.txt",
+   "raw_chars": 7425,
+   "normalized_chars": 7304,
+   "unit_count": 4,
+   "units": [
+    {
+     "page_id": "tut-venv#p01",
+     "page": 1,
+     "chars": 1633,
+     "section_at_start": "12. Virtual Environments and Packages",
+     "starts_with": "# 12. Virtual Environments and Packages",
+     "sha256": "536989ccc361fd47"
+    },
+    {
+     "page_id": "tut-venv#p02",
+     "page": 2,
+     "chars": 1548,
+     "section_at_start": "12.2. Creating Virtual Environments",
+     "starts_with": "To create a virtual environment, decide upon a directory where you",
+     "sha256": "43a7ea1c21f5cbe1"
+    },
+    {
+     "page_id": "tut-venv#p03",
+     "page": 3,
+     "chars": 1518,
+     "section_at_start": "12.2. Creating Virtual Environments",
+     "starts_with": "Note that the activated virtual environment does not alter the",
+     "sha256": "6e0ee9c9b9202291"
+    },
+    {
+     "page_id": "tut-venv#p04",
+     "page": 4,
+     "chars": 2599,
+     "section_at_start": "12.3. Managing Packages with pip",
+     "starts_with": "If you re-run this command, \"pip\" will notice that the requested",
+     "sha256": "3fbd052eabc21553"
+    }
+   ],
+   "errors": [],
+   "doc_type": "tutorial",
+   "version": "3.15"
+  },
+  {
+   "source_id": "tut-stdlib",
+   "title": "10. Brief tour of the standard library",
+   "source_path_or_url": "https://docs.python.org/3.15/tutorial/stdlib.html",
+   "local_path": "data/raw/python-docs-3.15/tutorial/stdlib.txt",
+   "raw_chars": 10865,
+   "normalized_chars": 10507,
+   "unit_count": 6,
+   "units": [
+    {
+     "page_id": "tut-stdlib#p01",
+     "page": 1,
+     "chars": 1607,
+     "section_at_start": "10. Brief tour of the standard library",
+     "starts_with": "# 10. Brief tour of the standard library",
+     "sha256": "877d89add1d849ba"
+    },
+    {
+     "page_id": "tut-stdlib#p02",
+     "page": 2,
+     "chars": 1686,
+     "section_at_start": "10.3. Command-line arguments",
+     "starts_with": "# File demo.py",
+     "sha256": "9b50875641ed81b8"
+    },
+    {
+     "page_id": "tut-stdlib#p03",
+     "page": 3,
+     "chars": 1857,
+     "section_at_start": "10.5. String pattern matching",
+     "starts_with": "When only simple capabilities are needed, string methods are preferred",
+     "sha256": "42273aa68461a24f"
+    },
+    {
+     "page_id": "tut-stdlib#p04",
+     "page": 4,
+     "chars": 1544,
+     "section_at_start": "10.7. Internet access",
+     "starts_with": ">>> import smtplib",
+     "sha256": "5c0a889fa027a27e"
+    },
+    {
+     "page_id": "tut-stdlib#p05",
+     "page": 5,
+     "chars": 1568,
+     "section_at_start": "10.10. Performance measurement",
+     "starts_with": "# 10.10. Performance measurement",
+     "sha256": "f6a867e88294df5f"
+    },
+    {
+     "page_id": "tut-stdlib#p06",
+     "page": 6,
+     "chars": 2235,
+     "section_at_start": "10.11. Quality control",
+     "starts_with": "import doctest",
+     "sha256": "69a3837f243d1a6c"
+    }
+   ],
+   "errors": [],
+   "doc_type": "tutorial",
+   "version": "3.15"
+  },
+  {
+   "source_id": "tut-stdlib2",
+   "title": "11. Brief tour of the standard library --- part II",
+   "source_path_or_url": "https://docs.python.org/3.15/tutorial/stdlib2.html",
+   "local_path": "data/raw/python-docs-3.15/tutorial/stdlib2.txt",
+   "raw_chars": 14601,
+   "normalized_chars": 14340,
+   "unit_count": 8,
+   "units": [
+    {
+     "page_id": "tut-stdlib2#p01",
+     "page": 1,
+     "chars": 1536,
+     "section_at_start": "11. Brief tour of the standard library --- part II",
+     "starts_with": "# 11. Brief tour of the standard library --- part II",
+     "sha256": "8b198e4bf9b5fb97"
+    },
+    {
+     "page_id": "tut-stdlib2#p02",
+     "page": 2,
+     "chars": 1670,
+     "section_at_start": "11.1. Output formatting",
+     "starts_with": "The \"locale\" module accesses a database of culture specific data",
+     "sha256": "fd5bc630f153fd49"
+    },
+    {
+     "page_id": "tut-stdlib2#p03",
+     "page": 3,
+     "chars": 1840,
+     "section_at_start": "11.2. Templating",
+     "starts_with": ">>> t = Template('Return the $item to $owner.')",
+     "sha256": "7cf63e513701489e"
+    },
+    {
+     "page_id": "tut-stdlib2#p04",
+     "page": 4,
+     "chars": 1597,
+     "section_at_start": "11.3. Working with binary data record layouts",
+     "starts_with": "import struct",
+     "sha256": "db5813be18f54e5f"
+    },
+    {
+     "page_id": "tut-stdlib2#p05",
+     "page": 5,
+     "chars": 1758,
+     "section_at_start": "11.4. Multi-threading",
+     "starts_with": "background.join()    # Wait for the background task to finish",
+     "sha256": "7f964a5ec69cfdb0"
+    },
+    {
+     "page_id": "tut-stdlib2#p06",
+     "page": 6,
+     "chars": 1840,
+     "section_at_start": "11.5. Logging",
+     "starts_with": "The logging system can be configured directly from Python or can be",
+     "sha256": "25b46843d268af1a"
+    },
+    {
+     "page_id": "tut-stdlib2#p07",
+     "page": 7,
+     "chars": 1704,
+     "section_at_start": "11.7. Tools for working with lists",
+     "starts_with": "# 11.7. Tools for working with lists",
+     "sha256": "510774266fa96449"
+    },
+    {
+     "page_id": "tut-stdlib2#p08",
+     "page": 8,
+     "chars": 2381,
+     "section_at_start": "11.7. Tools for working with lists",
+     "starts_with": "The \"heapq\" module provides functions for implementing heaps based on",
+     "sha256": "730cbadcb996a013"
+    }
+   ],
+   "errors": [],
+   "doc_type": "tutorial",
+   "version": "3.15"
+  },
+  {
+   "source_id": "howto-sorting",
+   "title": "Sorting Techniques",
+   "source_path_or_url": "https://docs.python.org/3.15/howto/sorting.html",
+   "local_path": "data/raw/python-docs-3.15/howto/sorting.txt",
+   "raw_chars": 13532,
+   "normalized_chars": 13262,
+   "unit_count": 8,
+   "units": [
+    {
+     "page_id": "howto-sorting#p01",
+     "page": 1,
+     "chars": 1703,
+     "section_at_start": "Sorting Techniques",
+     "starts_with": "# Sorting Techniques",
+     "sha256": "0d6a3840cabd11ba"
+    },
+    {
+     "page_id": "howto-sorting#p02",
+     "page": 2,
+     "chars": 1546,
+     "section_at_start": "Key Functions",
+     "starts_with": "A common pattern is to sort complex objects using some of the object's",
+     "sha256": "cc1bde5634283c77"
+    },
+    {
+     "page_id": "howto-sorting#p03",
+     "page": 3,
+     "chars": 1520,
+     "section_at_start": "Operator Module Functions and Partial Function Evaluation",
+     "starts_with": ">>> sorted(student_tuples, key=itemgetter(2))",
+     "sha256": "ad887b8fe37480df"
+    },
+    {
+     "page_id": "howto-sorting#p04",
+     "page": 4,
+     "chars": 1640,
+     "section_at_start": "Ascending and Descending",
+     "starts_with": ">>> sorted(student_objects, key=attrgetter('age'), reverse=True)",
+     "sha256": "e239650fa2fb9291"
+    },
+    {
+     "page_id": "howto-sorting#p05",
+     "page": 5,
+     "chars": 1530,
+     "section_at_start": "Decorate-Sort-Undecorate",
+     "starts_with": "# Decorate-Sort-Undecorate",
+     "sha256": "43ce2c9166567fa7"
+    },
+    {
+     "page_id": "howto-sorting#p06",
+     "page": 6,
+     "chars": 1598,
+     "section_at_start": "Comparison Functions",
+     "starts_with": "# Comparison Functions",
+     "sha256": "a0a2855b1ae7ab64"
+    },
+    {
+     "page_id": "howto-sorting#p07",
+     "page": 7,
+     "chars": 1684,
+     "section_at_start": "Strategies For Unorderable Types and Values",
+     "starts_with": "Likewise, \"None\" can be stripped from datasets as well:",
+     "sha256": "c701e6d9f53e73c6"
+    },
+    {
+     "page_id": "howto-sorting#p08",
+     "page": 8,
+     "chars": 2027,
+     "section_at_start": "Odds and Ends",
+     "starts_with": "* The sort routines use \"<\" when making comparisons between two",
+     "sha256": "57fca9afdf349d75"
+    }
+   ],
+   "errors": [],
+   "doc_type": "howto",
+   "version": "3.15"
+  },
+  {
+   "source_id": "howto-logging",
+   "title": "Logging HOWTO",
+   "source_path_or_url": "https://docs.python.org/3.15/howto/logging.html",
+   "local_path": "data/raw/python-docs-3.15/howto/logging.txt",
+   "raw_chars": 46534,
+   "normalized_chars": 46046,
+   "unit_count": 26,
+   "units": [
+    {
+     "page_id": "howto-logging#p01",
+     "page": 1,
+     "chars": 3468,
+     "section_at_start": "Logging HOWTO",
+     "starts_with": "# Logging HOWTO",
+     "sha256": "8695ddefe127c3ee"
+    },
+    {
+     "page_id": "howto-logging#p02",
+     "page": 2,
+     "chars": 1534,
+     "section_at_start": "When to use logging",
+     "starts_with": "The logger methods are named after the level or severity of the events",
+     "sha256": "0ee6f2c7a4db43e8"
+    },
+    {
+     "page_id": "howto-logging#p03",
+     "page": 3,
+     "chars": 1508,
+     "section_at_start": "When to use logging",
+     "starts_with": "The default level is \"WARNING\", which means that only events of this",
+     "sha256": "d8bd1bca1d9e03e2"
+    },
+    {
+     "page_id": "howto-logging#p04",
+     "page": 4,
+     "chars": 1500,
+     "section_at_start": "Logging to a file",
+     "starts_with": "# Logging to a file",
+     "sha256": "a0e1235e5c61b290"
+    },
+    {
+     "page_id": "howto-logging#p05",
+     "page": 5,
+     "chars": 1562,
+     "section_at_start": "Logging to a file",
+     "starts_with": "--log=INFO",
+     "sha256": "eb0de84bdf038195"
+    },
+    {
+     "page_id": "howto-logging#p06",
+     "page": 6,
+     "chars": 1621,
+     "section_at_start": "Logging variable data",
+     "starts_with": "import logging",
+     "sha256": "adfae47bd3a55b5c"
+    },
+    {
+     "page_id": "howto-logging#p07",
+     "page": 7,
+     "chars": 1636,
+     "section_at_start": "Displaying the date/time in messages",
+     "starts_with": "import logging",
+     "sha256": "157b3f36216d45c4"
+    },
+    {
+     "page_id": "howto-logging#p08",
+     "page": 8,
+     "chars": 1701,
+     "section_at_start": "Advanced Logging Tutorial",
+     "starts_with": "# Advanced Logging Tutorial",
+     "sha256": "1950d3485e5e551d"
+    },
+    {
+     "page_id": "howto-logging#p09",
+     "page": 9,
+     "chars": 1749,
+     "section_at_start": "Advanced Logging Tutorial",
+     "starts_with": "It is, of course, possible to log messages to different destinations.",
+     "sha256": "8db73c20fa27853f"
+    },
+    {
+     "page_id": "howto-logging#p10",
+     "page": 10,
+     "chars": 1636,
+     "section_at_start": "Loggers",
+     "starts_with": "The most widely used methods on logger objects fall into two",
+     "sha256": "2d37f3bc782195ec"
+    },
+    {
+     "page_id": "howto-logging#p11",
+     "page": 11,
+     "chars": 1883,
+     "section_at_start": "Loggers",
+     "starts_with": "* \"Logger.exception()\" creates a log message similar to",
+     "sha256": "116b8b9027aa44ba"
+    },
+    {
+     "page_id": "howto-logging#p12",
+     "page": 12,
+     "chars": 1605,
+     "section_at_start": "Handlers",
+     "starts_with": "# Handlers",
+     "sha256": "3f6cdb07ea0354fa"
+    },
+    {
+     "page_id": "howto-logging#p13",
+     "page": 13,
+     "chars": 1524,
+     "section_at_start": "Handlers",
+     "starts_with": "Application code should not directly instantiate and use instances of",
+     "sha256": "1a8c269f39abdeb6"
+    },
+    {
+     "page_id": "howto-logging#p14",
+     "page": 14,
+     "chars": 1542,
+     "section_at_start": "Formatters",
+     "starts_with": "The following message format string will log the time in a human-",
+     "sha256": "faa9aa7bff5542c9"
+    },
+    {
+     "page_id": "howto-logging#p15",
+     "page": 15,
+     "chars": 1511,
+     "section_at_start": "Configuring Logging",
+     "starts_with": "# create formatter",
+     "sha256": "9f00e6ece4cb8c13"
+    },
+    {
+     "page_id": "howto-logging#p16",
+     "page": 16,
+     "chars": 1964,
+     "section_at_start": "Configuring Logging",
+     "starts_with": "[formatters]",
+     "sha256": "e51c9c8420b0a008"
+    },
+    {
+     "page_id": "howto-logging#p17",
+     "page": 17,
+     "chars": 1761,
+     "section_at_start": "Configuring Logging",
+     "starts_with": "Note that the class names referenced in config files need to be either",
+     "sha256": "0608f01534c3f086"
+    },
+    {
+     "page_id": "howto-logging#p18",
+     "page": 18,
+     "chars": 1692,
+     "section_at_start": "Configuring Logging",
+     "starts_with": "For more information about logging using a dictionary, see",
+     "sha256": "a456dda01c0af379"
+    },
+    {
+     "page_id": "howto-logging#p19",
+     "page": 19,
+     "chars": 1655,
+     "section_at_start": "Configuring Logging for a Library",
+     "starts_with": "If for some reason you *don't* want these messages printed in the",
+     "sha256": "161ada5535588247"
+    },
+    {
+     "page_id": "howto-logging#p20",
+     "page": 20,
+     "chars": 1854,
+     "section_at_start": "Configuring Logging for a Library",
+     "starts_with": "Note:",
+     "sha256": "d1902e770de6493e"
+    },
+    {
+     "page_id": "howto-logging#p21",
+     "page": 21,
+     "chars": 2099,
+     "section_at_start": "Logging Levels",
+     "starts_with": "Logging messages are encoded as instances of the \"LogRecord\" class.",
+     "sha256": "5f44d56e56757122"
+    },
+    {
+     "page_id": "howto-logging#p22",
+     "page": 22,
+     "chars": 1693,
+     "section_at_start": "Useful Handlers",
+     "starts_with": "# Useful Handlers",
+     "sha256": "2288baebcf1dd552"
+    },
+    {
+     "page_id": "howto-logging#p23",
+     "page": 23,
+     "chars": 1632,
+     "section_at_start": "Useful Handlers",
+     "starts_with": "14. \"QueueHandler\" instances send messages to a queue, such as those",
+     "sha256": "da846a1951b59f20"
+    },
+    {
+     "page_id": "howto-logging#p24",
+     "page": 24,
+     "chars": 1737,
+     "section_at_start": "Useful Handlers",
+     "starts_with": "The basic \"Filter\" functionality allows filtering by specific logger",
+     "sha256": "dfa46787eb8213d6"
+    },
+    {
+     "page_id": "howto-logging#p25",
+     "page": 25,
+     "chars": 1586,
+     "section_at_start": "Optimization",
+     "starts_with": "# Optimization",
+     "sha256": "dea7dc178413e9fa"
+    },
+    {
+     "page_id": "howto-logging#p26",
+     "page": 26,
+     "chars": 2343,
+     "section_at_start": "Optimization",
+     "starts_with": "+-------------------------------------------------------+-----------------------",
+     "sha256": "1d0b232fc8bbce1c"
+    }
+   ],
+   "errors": [],
+   "doc_type": "howto",
+   "version": "3.15"
+  }
+ ]
+}

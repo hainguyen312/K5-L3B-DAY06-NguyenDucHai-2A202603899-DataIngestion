@@ -1,0 +1,19 @@
+strategy,id,grounding_0_2,reason
+A,q20,2,"r2 A:howto-sorting#p04:c00 có câu ""Sorts are guaranteed to be stable... original order is preserved"" kèm ví dụ; r1 bổ sung rằng reverse vẫn giữ tính ổn định"
+B,q20,2,"r2 B:howto-sorting#p04:c01 có đủ câu về tính ổn định, ví dụ và giải thích"
+C,q20,2,Giống B (q20 không có filter)
+A,q21,2,"r1 A:howto-logging#p05:c02 có giải thích filemode và lệnh basicConfig(filename=..., filemode='w'); chữ cuối bị cắt (""l"") nhưng đáp án đầy đủ"
+B,q21,2,"r1 B:howto-logging#p05:c01 đầy đủ: hành vi ghi nối, lệnh filemode='w' và hệ quả"
+C,q21,2,"Giống B; áp filter howto, cả top-3 đều thuộc howto"
+A,q22,2,r2 A:tut-datastructures#p14:c00 có câu evidence + ví dụ; r1/r3 lấy từ Sorting HOWTO (ngoài ngữ cảnh Tutorial của người dùng) nhưng nội dung vẫn đúng
+B,q22,2,r3 B:tut-datastructures#p14:c00 có câu evidence + ví dụ; r1 là howto-sorting (ngoài ngữ cảnh)
+C,q22,2,r2 C:tut-datastructures#p14:c00 đủ bằng chứng; cả top-3 đều thuộc tutorial
+A,q23,2,"r1 A:howto-logging#p20:c00 có ghi chú ""strongly advised... NullHandler"" và lý do; r3 bổ sung mô tả NullHandler"
+B,q23,2,r1 B:howto-logging#p20:c00 có đủ ghi chú kèm lý do
+C,q23,2,Giống B (q23 không có filter)
+A,q24,2,"r2 A:tut-stdlib2#p08:c01 nêu module decimal + ""financial applications... exact decimal representation"" (danh sách bị cắt sau gạch đầu dòng thứ 2); r1/r3 bổ sung ví dụ"
+B,q24,2,"r1 B:tut-stdlib2#p08:c01 có module, đủ danh sách trường hợp dùng và đầu ví dụ tính thuế"
+C,q24,2,Giống B (q24 không có filter)
+A,q25,2,"r2 A:howto-logging#p11:c01 có câu ""Multiple calls to getLogger() with the same name will return a reference to the same logger object""; r1 là ví dụ cấu hình không liên quan"
+B,q25,2,r1 B:howto-logging#p11:c01 có đủ câu khẳng định và giải thích phân cấp logger
+C,q25,2,Giống B (q25 không có filter)

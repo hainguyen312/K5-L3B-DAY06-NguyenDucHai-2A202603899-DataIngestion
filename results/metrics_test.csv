@@ -1,0 +1,4 @@
+strategy,split,N,hit1,hit3,page_hit3,filter_questions,filter_respected,ms_per_query,run_at
+A,test,6,2,6,6,2,1,92.6,2026-11-14T05:13:50+00:00
+B,test,6,4,6,6,2,1,18.9,2026-11-14T05:13:50+00:00
+C,test,6,4,6,6,2,2,24.0,2026-11-14T05:13:50+00:00

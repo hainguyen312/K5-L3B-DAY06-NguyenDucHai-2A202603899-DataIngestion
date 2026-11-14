@@ -1,0 +1,303 @@
+{
+ "run_at": "2026-11-14T05:12:32+00:00",
+ "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+ "model_revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+ "dimensions": 384,
+ "max_seq_length": 256,
+ "model_load_seconds": 4.51,
+ "device": "cpu",
+ "platform": "macOS-26.0-arm64-arm-64bit",
+ "python": "3.12.0",
+ "cost_usd": 0.0,
+ "strategies": {
+  "A": {
+   "config": {
+    "chunking": "fixed_size",
+    "size": 500,
+    "overlap": 50,
+    "use_filter": false
+   },
+   "chunks": 451,
+   "total_chars": 201001,
+   "chars_min": 54,
+   "chars_p10": 236,
+   "chars_median": 500,
+   "chars_p90": 500,
+   "chars_max": 500,
+   "tokens_total": 55317,
+   "tokens_median": 128,
+   "tokens_max": 241,
+   "chunks_truncated_at_max_seq": 0,
+   "seconds_chunk": 0.005,
+   "seconds_embed": 8.52,
+   "seconds_store": 0.25,
+   "seconds_total": 8.78,
+   "upsert": {
+    "before": 0,
+    "written": 451,
+    "deleted_obsolete": 0,
+    "after_total": 451
+   }
+  },
+  "B": {
+   "config": {
+    "chunking": "by_paragraph",
+    "max_size": 800,
+    "min_size": 200,
+    "use_filter": false
+   },
+   "chunks": 325,
+   "total_chars": 183282,
+   "chars_min": 83,
+   "chars_p10": 252,
+   "chars_median": 600,
+   "chars_p90": 786,
+   "chars_max": 952,
+   "tokens_total": 50173,
+   "tokens_median": 158,
+   "tokens_max": 364,
+   "chunks_truncated_at_max_seq": 15,
+   "seconds_chunk": 0.005,
+   "seconds_embed": 6.37,
+   "seconds_store": 0.2,
+   "seconds_total": 6.57,
+   "upsert": {
+    "before": 0,
+    "written": 325,
+    "deleted_obsolete": 0,
+    "after_total": 325
+   }
+  },
+  "C": {
+   "config": {
+    "chunking": "by_paragraph",
+    "max_size": 800,
+    "min_size": 200,
+    "use_filter": true
+   },
+   "chunks": 325,
+   "total_chars": 183282,
+   "chars_min": 83,
+   "chars_p10": 252,
+   "chars_median": 600,
+   "chars_p90": 786,
+   "chars_max": 952,
+   "tokens_total": 50173,
+   "tokens_median": 158,
+   "tokens_max": 364,
+   "chunks_truncated_at_max_seq": 15,
+   "seconds_chunk": 0.005,
+   "seconds_embed": 6.43,
+   "seconds_store": 0.22,
+   "seconds_total": 6.65,
+   "upsert": {
+    "before": 0,
+    "written": 325,
+    "deleted_obsolete": 0,
+    "after_total": 325
+   }
+  }
+ },
+ "history": [
+  {
+   "run_at": "2026-11-14T05:11:29+00:00",
+   "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+   "model_revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+   "dimensions": 384,
+   "max_seq_length": 256,
+   "model_load_seconds": 8.36,
+   "device": "cpu",
+   "platform": "macOS-26.0-arm64-arm-64bit",
+   "python": "3.12.0",
+   "cost_usd": 0.0,
+   "strategies": {
+    "A": {
+     "config": {
+      "chunking": "fixed_size",
+      "size": 500,
+      "overlap": 50,
+      "use_filter": false
+     },
+     "chunks": 455,
+     "total_chars": 201097,
+     "chars_min": 57,
+     "chars_p10": 212,
+     "chars_median": 500,
+     "chars_p90": 500,
+     "chars_max": 500,
+     "tokens_total": 55432,
+     "tokens_median": 128,
+     "tokens_max": 241,
+     "chunks_truncated_at_max_seq": 0,
+     "seconds_chunk": 0.005,
+     "seconds_embed": 10.04,
+     "seconds_store": 0.21,
+     "seconds_total": 10.25,
+     "upsert": {
+      "before": 0,
+      "written": 455,
+      "deleted_obsolete": 0,
+      "after_total": 455
+     }
+    },
+    "B": {
+     "config": {
+      "chunking": "by_paragraph",
+      "max_size": 800,
+      "use_filter": false
+     },
+     "chunks": 349,
+     "total_chars": 183234,
+     "chars_min": 20,
+     "chars_p10": 170,
+     "chars_median": 589,
+     "chars_p90": 771,
+     "chars_max": 799,
+     "tokens_total": 50221,
+     "tokens_median": 148,
+     "tokens_max": 348,
+     "chunks_truncated_at_max_seq": 12,
+     "seconds_chunk": 0.005,
+     "seconds_embed": 7.6,
+     "seconds_store": 0.25,
+     "seconds_total": 7.86,
+     "upsert": {
+      "before": 0,
+      "written": 349,
+      "deleted_obsolete": 0,
+      "after_total": 349
+     }
+    },
+    "C": {
+     "config": {
+      "chunking": "by_paragraph",
+      "max_size": 800,
+      "use_filter": true
+     },
+     "chunks": 349,
+     "total_chars": 183234,
+     "chars_min": 20,
+     "chars_p10": 170,
+     "chars_median": 589,
+     "chars_p90": 771,
+     "chars_max": 799,
+     "tokens_total": 50221,
+     "tokens_median": 148,
+     "tokens_max": 348,
+     "chunks_truncated_at_max_seq": 12,
+     "seconds_chunk": 0.005,
+     "seconds_embed": 8.38,
+     "seconds_store": 0.34,
+     "seconds_total": 8.72,
+     "upsert": {
+      "before": 0,
+      "written": 349,
+      "deleted_obsolete": 0,
+      "after_total": 349
+     }
+    }
+   }
+  },
+  {
+   "run_at": "2026-11-14T05:12:32+00:00",
+   "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+   "model_revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+   "dimensions": 384,
+   "max_seq_length": 256,
+   "model_load_seconds": 4.51,
+   "device": "cpu",
+   "platform": "macOS-26.0-arm64-arm-64bit",
+   "python": "3.12.0",
+   "cost_usd": 0.0,
+   "strategies": {
+    "A": {
+     "config": {
+      "chunking": "fixed_size",
+      "size": 500,
+      "overlap": 50,
+      "use_filter": false
+     },
+     "chunks": 451,
+     "total_chars": 201001,
+     "chars_min": 54,
+     "chars_p10": 236,
+     "chars_median": 500,
+     "chars_p90": 500,
+     "chars_max": 500,
+     "tokens_total": 55317,
+     "tokens_median": 128,
+     "tokens_max": 241,
+     "chunks_truncated_at_max_seq": 0,
+     "seconds_chunk": 0.005,
+     "seconds_embed": 8.52,
+     "seconds_store": 0.25,
+     "seconds_total": 8.78,
+     "upsert": {
+      "before": 0,
+      "written": 451,
+      "deleted_obsolete": 0,
+      "after_total": 451
+     }
+    },
+    "B": {
+     "config": {
+      "chunking": "by_paragraph",
+      "max_size": 800,
+      "min_size": 200,
+      "use_filter": false
+     },
+     "chunks": 325,
+     "total_chars": 183282,
+     "chars_min": 83,
+     "chars_p10": 252,
+     "chars_median": 600,
+     "chars_p90": 786,
+     "chars_max": 952,
+     "tokens_total": 50173,
+     "tokens_median": 158,
+     "tokens_max": 364,
+     "chunks_truncated_at_max_seq": 15,
+     "seconds_chunk": 0.005,
+     "seconds_embed": 6.37,
+     "seconds_store": 0.2,
+     "seconds_total": 6.57,
+     "upsert": {
+      "before": 0,
+      "written": 325,
+      "deleted_obsolete": 0,
+      "after_total": 325
+     }
+    },
+    "C": {
+     "config": {
+      "chunking": "by_paragraph",
+      "max_size": 800,
+      "min_size": 200,
+      "use_filter": true
+     },
+     "chunks": 325,
+     "total_chars": 183282,
+     "chars_min": 83,
+     "chars_p10": 252,
+     "chars_median": 600,
+     "chars_p90": 786,
+     "chars_max": 952,
+     "tokens_total": 50173,
+     "tokens_median": 158,
+     "tokens_max": 364,
+     "chunks_truncated_at_max_seq": 15,
+     "seconds_chunk": 0.005,
+     "seconds_embed": 6.43,
+     "seconds_store": 0.22,
+     "seconds_total": 6.65,
+     "upsert": {
+      "before": 0,
+      "written": 325,
+      "deleted_obsolete": 0,
+      "after_total": 325
+     }
+    }
+   }
+  }
+ ]
+}

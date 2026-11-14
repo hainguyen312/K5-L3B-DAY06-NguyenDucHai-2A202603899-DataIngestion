@@ -1,4 +1,4 @@
 strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+A,cửa sổ ký tự cố định (trong từng đơn vị),500,50,"document_id, source, page, page_id, doc_type, section (heading ở đầu chunk), version, char_start/end",không,paraphrase-multilingual-MiniLM-L12-v2 (384 chiều; max_seq 256; chuẩn hóa L2; Chroma cosine HNSW),Baseline: cửa sổ nhỏ cho điểm khớp chính xác hơn nhưng cắt ngang câu và evidence ở ranh giới,13/19,15/19,2/6,6/6,"451 chunk; embed 8,5 s; 0 chunk bị cắt token; coherence 0,9/2; tuân thủ filter dev 2/3, test 1/2; được chọn trên dev nhờ tie-break Hit@1"
+B,gom theo đoạn + ranh giới heading (trong từng đơn vị),tối đa 800 (gộp mảnh <200),0,giống A,không,giống A,Giữ nguyên đoạn/section thì ý trọn vẹn hơn (coherence và grounding tốt hơn) với ít chunk hơn,10/19,15/19,4/6,6/6,"325 chunk; embed 6,4 s; 15 chunk vượt 256 token bị cắt; coherence 1,5/2; tuân thủ filter dev 2/3, test 1/2"
+C,giống B (chunk y hệt),tối đa 800 (gộp mảnh <200),0,giống A,"doc_type ∈ {tutorial, howto}, chỉ áp cho câu có filter ngữ cảnh (q17, q18, q19, q21, q22)",giống A,Khác B duy nhất ở metadata filter: loại chunk ngoài phạm vi (doc_type khác) khi hai phạm vi có chủ đề trùng nhau,10/19,15/19,4/6,6/6,"325 chunk; tuân thủ filter dev 3/3, test 2/2; số Hit không đổi so với B trên benchmark này"

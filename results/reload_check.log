@@ -1,0 +1,7 @@
+# kiểm tra nạp lại 2026-11-14T07:27:32+00:00
+A: số chunk trước=451; nạp lại lần 1 {'before': 451, 'written': 451, 'deleted_obsolete': 0, 'after_total': 451}; nạp lại lần 2 {'before': 451, 'written': 451, 'deleted_obsolete': 0, 'after_total': 451}; kỳ vọng 451 -> OK
+A: giả lập tài liệu đổi (bỏ tut-venv#p04) {'before': 18, 'written': 12, 'deleted_obsolete': 6, 'after_total': 445}; kỳ vọng tổng 445 -> OK
+A: khôi phục bản gốc {'before': 445, 'written': 451, 'deleted_obsolete': 0, 'after_total': 451}
+B: số chunk trước=325; nạp lại lần 1 {'before': 325, 'written': 325, 'deleted_obsolete': 0, 'after_total': 325}; nạp lại lần 2 {'before': 325, 'written': 325, 'deleted_obsolete': 0, 'after_total': 325}; kỳ vọng 325 -> OK
+B: giả lập tài liệu đổi (bỏ tut-venv#p04) {'before': 12, 'written': 8, 'deleted_obsolete': 4, 'after_total': 321}; kỳ vọng tổng 321 -> OK
+B: khôi phục bản gốc {'before': 321, 'written': 325, 'deleted_obsolete': 0, 'after_total': 325}

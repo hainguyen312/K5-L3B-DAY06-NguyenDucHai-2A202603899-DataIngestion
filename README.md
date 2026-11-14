@@ -1,5 +1,36 @@
 # Day 06 · Data Ingestion Engineering
 
+> ## Bài làm: Nguyễn Đức Hải (2A202603899)
+>
+> **Corpus:** Python 3.15 docs, gồm 7 chương Tutorial và 2 HOWTO (PSF License), 105 đơn vị ≥1.500 ký tự. **Model:** `paraphrase-multilingual-MiniLM-L12-v2`, chạy local, 384 chiều. **Store:** Chroma 1.5.9 persistent, cosine. pgvector không pull được image do lỗi proxy Docker, xem `results/run_log.md`.
+> Báo cáo nằm ở [report/individual/2A202603899_NguyenDucHai.md](report/individual/2A202603899_NguyenDucHai.md).
+>
+> ```bash
+> cd starter
+> python3.12 -m venv .venv && source .venv/bin/activate
+> pip install -r requirements.txt   # sentence-transformers, chromadb, ...
+> python -m src.run manifest            # đọc + chuẩn hóa -> data/manifest.json, results/ingest_errors.log
+> python -m src.run verify-benchmark    # kiểm chứng evidence -> results/benchmark_verification.csv
+> python -m src.run ingest              # A, B, C -> vectordb/chroma, results/ingest_stats.json, chunks_*.jsonl
+> python -m src.run reload-check        # nạp lại không trùng + giả lập tài liệu đổi -> results/reload_check.log
+> python -m src.run evaluate --split dev
+> python -m src.run evaluate --split test   # -> results/traces_*.jsonl, metrics_*.csv
+> python -m src.run samples             # mẫu coherence (nhãn thủ công ở results/manual_*.csv)
+> ```
+>
+> Lần đầu cần mạng để tải model. Code đặt `HF_HUB_OFFLINE=1` để dùng snapshot đã cache; nếu máy chưa có model, chạy với `HF_HUB_OFFLINE=0`.
+>
+> | Thư mục | Nội dung |
+> |---|---|
+> | `data/raw/python-docs-3.15/` | Corpus gốc và giấy phép |
+> | `data/manifest.json` | Nguồn, quyền, ranh giới đơn vị |
+> | `benchmark/` | 25 câu hỏi (19 dev / 6 test) và README về split, filter, tiêu chí chọn |
+> | `starter/src/` | Pipeline |
+> | `results/` | Trace, chỉ số, nhãn thủ công, log |
+> | `artifacts/experiment_log.csv` | Nhật ký thí nghiệm A/B/C |
+>
+> Đề bài gốc giữ nguyên bên dưới.
+
 **Lab cá nhân** · **4 giờ** · **Dữ liệu tự chọn**
 
 Biến tài liệu thành kho tri thức có thể truy xuất cho AI agent, rồi đo xem cách chuẩn bị dữ liệu nào hiệu quả nhất.
